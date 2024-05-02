@@ -5140,6 +5140,21 @@ expect@^29.0.0:
 exponential-backoff@^3.1.1:
   version "3.1.1"
 
+"express-apis@file:/Users/kartik.g/Downloads/Projects/basic-project/apps/express-apis":
+  version "1.0.0"
+  resolved "file:apps/express-apis"
+  dependencies:
+    axiom "^0.1.6"
+    cors "^2.8.5"
+    crypto "^1.0.1"
+    dotenv "^16.4.5"
+    express "^4.19.2"
+    jsonwebtoken "^9.0.2"
+    mongoose "^8.3.0"
+    node-fetch "^3.3.1"
+    thirty-two "^1.0.2"
+    totp-generator "^1.0.0"
+
 "express-app@file:/Users/kartik.g/Downloads/Projects/basic-project/apps/express-app":
   version "1.0.0"
   resolved "file:apps/express-app"

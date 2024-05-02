@@ -9,6 +9,6 @@
   ],
   "scripts": {
     "web:dev": "yarn workspace react-ecom dev",
-    "api:dev": "yarn workspace express-app dev"
+    "api:dev": "yarn workspace express-apis dev"
   }
 }

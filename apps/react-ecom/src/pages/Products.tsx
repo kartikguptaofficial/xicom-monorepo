@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { fetchProducts } from "../services/product.service";
 import { useState } from "react";
+import Navbar from "../components/Navbar";
 
 const products = [
   {
@@ -42,6 +43,7 @@ export default function ProductPage() {
 
   return (
     <>
+      <Navbar />
       <div className="bg-gray-100 ">
         {/* Remove py-8 */}
         <div className="mx-auto container py-8">

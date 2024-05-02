@@ -35,7 +35,7 @@ export default function LoginPage() {
       if (loginData?.success) {
         const oauthData = loginData?.oauth;
         localStorage.setItem("accessToken", oauthData?.access_token);
-        window.alert("User registered successfully!")
+        window.alert(loginData?.message)
         window.location.href = "/products";
       } else {
         window.alert(loginData?.message)

@@ -12,6 +12,18 @@ const fetchProducts = async () => {
   return response.data?.data;
 }
 
+const createProduct = async (payload: any) => {
+  const accessToken = localStorage.getItem("accessToken");
+  const response = await axios.post(`${APP_CONFIG.API_BASE_URL}/v1/product`, payload, {
+    headers: {
+      'Authorization': `Bearer ${accessToken}`
+    }
+  });
+  console.log({ response })
+  return response.data;
+}
+
 export {
-  fetchProducts
+  fetchProducts,
+  createProduct
 }
